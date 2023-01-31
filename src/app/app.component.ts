@@ -7,7 +7,7 @@ import { Agrupacion } from './agrupacion.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Lista de Agrupaciones historicas del Carnaval de Cadiz';
+  title = 'Lista de Agrupaciones históricas del Carnaval de Cadiz';
 
   agrupaciones:Agrupacion[] = [
     new Agrupacion("Calabaza", "Comparsa", "Martinez Ares", 1991),
@@ -16,4 +16,19 @@ export class AppComponent {
     new Agrupacion("Inocente, Inocente", "Coro", "Nandi Migueles", 1994)
 
   ];
+
+  agregarAgrupacion() {
+    let laAgrupacion = new Agrupacion(this.cuadroNombre, this.cuadroTipo, this.cuadroAutor, this.cuadroAnyo);
+    this.agrupaciones.push(laAgrupacion);
+
+    this.cuadroNombre = "";
+    this.cuadroTipo = "";
+    this.cuadroAutor = "";
+    this.cuadroAnyo = 0;
+  }
+
+  cuadroNombre: string = "";
+  cuadroTipo: string = "";
+  cuadroAutor: string = "";
+  cuadroAnyo: number = 0;
 }
