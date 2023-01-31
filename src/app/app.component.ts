@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Agrupacion } from './agrupacion.model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = '2dam-empleados';
+  title = 'Lista de Agrupaciones del Carnaval 2023';
+
+  agrupaciones:Agrupacion[] = [
+   new Agrupacion("Calabaza", "Comparsa", "Martinez Ares", 1991)
+  ];
 }
