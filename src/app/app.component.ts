@@ -7,9 +7,13 @@ import { Agrupacion } from './agrupacion.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Lista de Agrupaciones del Carnaval 2023';
+  title = 'Lista de Agrupaciones historicas del Carnaval de Cadiz';
 
   agrupaciones:Agrupacion[] = [
-   new Agrupacion("Calabaza", "Comparsa", "Martinez Ares", 1991)
+    new Agrupacion("Calabaza", "Comparsa", "Martinez Ares", 1991),
+    new Agrupacion("Tres notas musicales", "Cuarteto", "Peña y masa", 1991),
+    new Agrupacion("Cadi City", "Chirigota", "JC Aragon", 1997),
+    new Agrupacion("Inocente, Inocente", "Coro", "Nandi Migueles", 1994)
+
   ];
 }
