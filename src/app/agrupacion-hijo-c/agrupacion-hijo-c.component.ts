@@ -16,6 +16,7 @@ export class AgrupacionHijoCComponent implements OnInit {
 
   agregarComponente(nuevoComponente: string) {
     this.arrayComponente.push(nuevoComponente);
+
   }
 
 

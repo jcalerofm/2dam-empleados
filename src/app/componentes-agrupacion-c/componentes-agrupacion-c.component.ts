@@ -11,6 +11,7 @@ export class ComponentesAgrupacionCComponent implements OnInit {
 
   @Output() componenteAgrupacion = new EventEmitter<string>();
 
+  miInput: string;
   constructor() { }
 
   ngOnInit(): void {
@@ -18,7 +19,8 @@ export class ComponentesAgrupacionCComponent implements OnInit {
 
   agregarComponente(value: string) {
     this.componenteAgrupacion.emit(value);
-    value = "";
+    //make input botoncomponente empty again
+    this.miInput = "";
   }
 
 }

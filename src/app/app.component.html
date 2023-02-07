@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container mt-5">
   <div class="col">
     <h1 style="padding-bottom: 10px;">{{title}}</h1>
     <form class="form-group row">
@@ -27,9 +27,8 @@
   </div>
 </div>
 <br><br><br>
-
-<app-agrupacion-hijo-c *ngFor="let agrupacion of agrupaciones; let i=index"  [listaAgrupaciones]="agrupacion" [indice]="i"></app-agrupacion-hijo-c>
-
+<div id="listado">
+  <app-agrupacion-hijo-c *ngFor="let agrupacion of agrupaciones; let i=index" [listaAgrupaciones]="agrupacion"
+    [indice]="i"></app-agrupacion-hijo-c>
+</div>
 <br><br><br>
-
-
