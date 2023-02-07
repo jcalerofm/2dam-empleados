@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Agrupacion } from '../agrupacion.model';
 
 @Component({
   selector: 'app-agrupacion-hijo-c',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class AgrupacionHijoCComponent implements OnInit {
 
   constructor() { }
-
+  @Input() listaAgrupaciones: Agrupacion;
   ngOnInit(): void {
   }
 
