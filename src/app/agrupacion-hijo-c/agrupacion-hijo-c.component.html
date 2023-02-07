@@ -1,12 +1,13 @@
 <div class="container">
   <div class="row">
-    <div class="col">
-      <h2>Lista de agrupaciones</h2>
-      <ol>
-        <li>
-          {{agrupacion.nombre}}, {{agrupacion.tipo}}, {{agrupacion.autor}}, {{agrupacion.anyo}}
-        </li>
-      </ol>
+    <div class="col fs-3">
+      {{indice +1}} - {{listaAgrupaciones.nombre}}, {{listaAgrupaciones.tipo}}, {{listaAgrupaciones.autor}},
+      {{listaAgrupaciones.anyo}}
     </div>
+    <app-componentes-agrupacion-c (componenteAgrupacion)="agregarComponente($event)"></app-componentes-agrupacion-c>
+      <ul style="list-style: none;">
+        <li *ngFor="let componente of arrayComponente">{{componente}}</li>
+      </ul>
+
   </div>
 </div>

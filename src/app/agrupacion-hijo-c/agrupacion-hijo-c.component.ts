@@ -10,6 +10,16 @@ export class AgrupacionHijoCComponent implements OnInit {
 
   constructor() { }
   @Input() listaAgrupaciones: Agrupacion;
+  @Input() indice: number;
+
+  arrayComponente = [''];
+
+  agregarComponente(nuevoComponente: string) {
+    this.arrayComponente.push(nuevoComponente);
+  }
+
+
+
   ngOnInit(): void {
   }
 

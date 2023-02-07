@@ -28,7 +28,7 @@
 </div>
 <br><br><br>
 
-<app-agrupacion-hijo-c *ngFor="let agrupacion of agrupaciones" [listaAgrupaciones]="agrupacion"></app-agrupacion-hijo-c>
+<app-agrupacion-hijo-c *ngFor="let agrupacion of agrupaciones; let i=index"  [listaAgrupaciones]="agrupacion" [indice]="i"></app-agrupacion-hijo-c>
 
 <br><br><br>
 

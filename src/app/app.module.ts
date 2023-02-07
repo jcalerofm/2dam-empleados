@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { AgrupacionHijoCComponent } from './agrupacion-hijo-c/agrupacion-hijo-c.component';
+import { ComponentesAgrupacionCComponent } from './componentes-agrupacion-c/componentes-agrupacion-c.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AgrupacionHijoCComponent
+    AgrupacionHijoCComponent,
+    ComponentesAgrupacionCComponent
   ],
   imports: [
     BrowserModule, FormsModule
