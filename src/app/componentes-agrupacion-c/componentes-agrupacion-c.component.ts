@@ -18,6 +18,7 @@ export class ComponentesAgrupacionCComponent implements OnInit {
 
   agregarComponente(value: string) {
     this.componenteAgrupacion.emit(value);
+    value = "";
   }
 
 }
