@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Agrupacion } from '../agrupacion.model';
 
 @Component({
@@ -18,7 +19,8 @@ export class CozasComponentComponent implements OnInit {
 
   ];
 
-  constructor() { }
+
+  constructor(private router:Router) {}
 
   ngOnInit(): void {
   }
@@ -31,7 +33,15 @@ export class CozasComponentComponent implements OnInit {
     this.cuadroTipo = "";
     this.cuadroAutor = "";
     this.cuadroAnyo = 0;
+    //redirect to home page
+    this.router.navigate(['']);
+
   }
+
+  irHome(){
+    this.router.navigate(['']);
+  }
+
 
   cuadroNombre: string = "";
   cuadroTipo: string = "";
