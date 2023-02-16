@@ -46,6 +46,7 @@ button {
 }
 
 .contenido{
+  /* Esto es clave para que el footer se mantenga abajo aunque haya poco contenido en la seccion principal */
   min-height: calc(100vh - 200px);
 }
 .footer {
@@ -56,6 +57,7 @@ button {
   height: 100px;
   padding: 0px 50px;
   color: rgba(0, 0, 0, 0.3);
+  /* Esto es clave para que el footer se mantenga abajo aunque haya poco contenido en la seccion principal */
   position: static;
   bottom: 0;
   width: 100%;
